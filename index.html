@@ -83,6 +83,14 @@
         .download-link a:hover {
             background-color: #5599dd;
         }
+        .intro {
+            text-align: center;
+        }
+        .intro img {
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -98,8 +106,17 @@
     </header>
     
     <div class="container" id="main">
+        <!-- 个人简介部分 -->
+        <div id="intro" class="section">
+            <div class="intro">
+                <h2>你好！我是王润陆</h2>
+                <p>我是一名对数据科学、机器学习和智能系统充满热情的学生，目前在康奈尔大学攻读硕士学位。在学术研究和实习过程中，我积累了丰富的项目经验。欢迎了解我的简历或项目！</p>
+                <img src="https://example.com/life-photo.jpg" alt="生活照">
+            </div>
+        </div>
+
         <!-- 简历部分 -->
-        <div id="resume" class="section">
+        <div id="resume" class="section hidden">
             <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/IMG_7121.JPG" alt="个人照片">
             <div class="section contact-info">
                 <h2>联系方式</h2>
@@ -128,7 +145,6 @@
                     <li>参观自动化工厂，了解工业 4.0概念</li>
                     <li>协助开发缺陷识别软件，提高效率和准确率，减少人工成本</li>
                 </ul>
-                <!-- 更多经历省略 -->
             </div>
             <div class="download-link">
                 <a href="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/wangrunlu.pdf" download>下载PDF版简历</a>
@@ -161,8 +177,8 @@
             document.getElementById(sectionId).classList.remove('hidden');
         }
 
-        // 默认显示简历
-        showSection('resume');
+        // 默认显示个人简介
+        showSection('intro');
     </script>
 </body>
 </html>
