@@ -17,26 +17,30 @@
             background-color: #f4f4f4;
         }
 
-        /* 顶部导航栏样式 */
+        /* 统一导航栏样式 */
         .nav {
             background-color: rgba(0, 0, 0, 0.8);
             padding: 10px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             font-size: 18px;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 20px;
             background-color: #77aaff;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .nav a:hover {
             background-color: #5599dd;
+            transform: scale(1.05);
         }
 
         .container {
@@ -62,6 +66,8 @@
 
         ul li {
             margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #555;
         }
 
         img {
@@ -95,13 +101,12 @@
 </head>
 <body>
 
-    <!-- 顶部导航栏 -->
+    <!-- 统一导航栏 -->
     <div class="nav">
-        <a href="index.html">主页</a>
-        <a href="about.html">About</a>
-        <a href="resume.html">简历</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="testimonials.html">Testimonials</a>
+        <a href="关于.html">关于</a>
+        <a href="简历.html">简历</a>
+        <a href="项目.html">项目</a>
+        <a href="其他.html">其他</a>
     </div>
 
     <!-- 简历内容 -->
@@ -155,4 +160,27 @@
                 <li>实现了算法准确率在97%以上</li>
             </ul>
 
-            <h4>数据科学一体化交互系统，系统编程 (2022.3 - 2022.5)</h
+            <h4>数据科学一体化交互系统，系统编程 (2022.3 - 2022.5)</h4>
+            <ul>
+                <li>使用Golang和Python将静态数据（传统结构化数据）与动态数据（非结构化数据）相结合，设计了一个具有商机识别和实时开发功能的综合互动系统</li>
+                <li>代码编程</li>
+                <li>该系统受国家版权局保护</li>
+            </ul>
+        </div>
+
+        <div class="section skills">
+            <h3>专业技能</h3>
+            <ul>
+                <li>编程语言：Matlab，Python，R，Java，C++</li>
+                <li>工具与技术：Eviews, SPSS, Stata, SAS, Origin, GraphPad</li>
+                <li>算法与模型：卷积神经网络 (CNN)，循环神经网络 (RNN)，主流机器学习算法</li>
+            </ul>
+        </div>
+
+        <div class="download-link">
+            <a href="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/wangrunlu.pdf" download>下载PDF版简历</a>
+        </div>
+    </div>
+
+</body>
+</html>
