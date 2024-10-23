@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - 王润陆的个人主页</title>
+    <title>项目 - 王润陆的个人主页</title>
     <style>
         * {
             margin: 0;
@@ -17,26 +17,30 @@
             background-color: #f4f4f4;
         }
 
-        /* 顶部导航栏样式 */
+        /* 统一导航栏样式 */
         .nav {
             background-color: rgba(0, 0, 0, 0.8);
             padding: 10px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             font-size: 18px;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 20px;
             background-color: #77aaff;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .nav a:hover {
             background-color: #5599dd;
+            transform: scale(1.05);
         }
 
         .container {
@@ -83,18 +87,17 @@
 </head>
 <body>
 
-    <!-- 顶部导航栏 -->
+    <!-- 统一导航栏 -->
     <div class="nav">
-        <a href="index.html">主页</a>
-        <a href="about.html">About</a>
-        <a href="resume.html">简历</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="testimonials.html">Testimonials</a>
+        <a href="关于.html">关于</a>
+        <a href="简历.html">简历</a>
+        <a href="项目.html">项目</a>
+        <a href="其他.html">其他</a>
     </div>
 
-    <!-- Portfolio 内容 -->
+    <!-- 项目内容 -->
     <div class="container">
-        <h2>Portfolio</h2>
+        <h2>项目展示</h2>
 
         <div class="project">
             <h3>项目1：基于EfficientNet的图像源识别</h3>
