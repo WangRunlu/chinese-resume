@@ -14,7 +14,6 @@
         body, html {
             height: 100%;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
         }
 
         /* 统一导航栏样式 */
@@ -43,6 +42,23 @@
             transform: scale(1.05);
         }
 
+        /* 返回主页按钮样式 */
+        .nav .home-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            padding: 10px;
+            background-color: #77aaff;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        .nav .home-btn:hover {
+            background-color: #5599dd;
+        }
+
         .container {
             width: 80%;
             margin: 20px auto;
@@ -50,13 +66,17 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
-        h2 {
-            border-bottom: 2px solid #77aaff;
-            padding-bottom: 10px;
+        h1 {
+            font-size: 2.5em;
             margin-bottom: 20px;
-            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
         }
 
         ul {
@@ -66,35 +86,24 @@
 
         ul li {
             margin-bottom: 10px;
-            font-size: 1.1em;
-            color: #555;
         }
 
-        img {
-            display: block;
-            margin: 0 auto 20px auto;
-            max-width: 200px;
-            height: auto;
-            border-radius: 50%;
-        }
-
+        /* 下载链接样式 */
         .download-link {
-            text-align: center;
-            margin: 20px 0;
+            margin-top: 20px;
         }
 
         .download-link a {
             text-decoration: none;
+            background-color: #77aaff;
             color: white;
-            background-color: #ff6600;
             padding: 10px 20px;
             border-radius: 5px;
-            transition: background-color 0.3s;
-            display: inline-block;
+            transition: background-color 0.3s ease;
         }
 
         .download-link a:hover {
-            background-color: #ff9933;
+            background-color: #5599dd;
         }
 
     </style>
@@ -105,80 +114,50 @@
     <div class="nav">
         <a href="关于.html">关于</a>
         <a href="简历.html">简历</a>
-        <a href="项目.html">项目</a>
+        <a href="实验.html">实验</a>
         <a href="其他.html">其他</a>
+        <!-- 返回主页按钮 -->
+        <a href="index.html" class="home-btn">返回主页</a>
     </div>
 
-    <!-- 简历内容 -->
+    <!-- 主要内容部分 -->
     <div class="container">
-        <h2>简历</h2>
-        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/IMG_7121.JPG" alt="个人照片">
-        
-        <div class="section contact-info">
-            <h3>联系方式</h3>
-            <ul>
-                <li>户籍：北京</li>
-                <li>Email: 2991334515@qq.com</li>
-                <li>电话: 13240901459</li>
-            </ul>
-        </div>
+        <h1>王润陆的简历</h1>
 
-        <div class="section education">
-            <h3>教育背景</h3>
-            <ul>
-                <li>康奈尔大学，系统工程，硕士 (2024.9-2025.12)</li>
-                <li>北方工业大学，数据科学与大数据技术，本科 (2020.9-2024.9)</li>
-                <li>雅思 7.0</li>
-                <li>绩点年级前 10%</li>
-                <li>学习课程：机器学习，概率与统计，离散数学与运筹学，风险决策，随机优化</li>
-            </ul>
-        </div>
+        <p><strong>电话:</strong> (+1) 607-6975713</p>
+        <p><strong>Email:</strong> rw746@cornell.edu</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/runlu-wang-7104b3310/">https://www.linkedin.com/in/runlu-wang-7104b3310/</a></p>
+        <p><strong>个人主页:</strong> <a href="https://wangrunlu.github.io/my-website/">https://wangrunlu.github.io/my-website/</a></p>
 
-        <div class="section experience">
-            <h3>过往经历</h3>
-            
-            <h4>江苏塞拉弗电力发展有限公司，信息岗实习 (2023.7 - 2023.8)</h4>
-            <ul>
-                <li>负责太阳能板缺陷识别项目</li>
-                <li>学习yolo算法与使用经验，参与算法优化</li>
-                <li>参观自动化工厂，了解工业4.0概念</li>
-                <li>协助开发缺陷识别软件，提高效率和准确率，减少人工成本</li>
-            </ul>
+        <h2>教育背景</h2>
+        <ul>
+            <li><strong>康奈尔大学</strong> - 系统工程硕士 (2024年7月 – 2026年5月)</li>
+            <li><strong>布鲁内尔大学伦敦分校</strong> - 数据科学数学学士 (一等荣誉学位) (2020年9月 – 2024年6月)</li>
+            <li>核心课程：机器人学习，基于模型的系统工程，深度学习数学</li>
+        </ul>
 
-            <h4>中国人民银行 (信创实验室)，研究岗实习 (2023.4 - 2023.7)</h4>
-            <ul>
-                <li>协助编写“人工智能在金融业应用白皮书”</li>
-                <li>撰写草案、组织会议邀请研究岗，银行业和IT行业的领先公司（如中信、华为、百度）讨论相关事宜，最终确定白皮书</li>
-                <li>完成有关金融标准化（信息创新）的本地化工作</li>
-                <li>白皮书已在2023年7月份人工智能闭门研讨会发布</li>
-            </ul>
+        <h2>证书与技能</h2>
+        <ul>
+            <li>统计技能: Eviews, SPSS, Stata, SAS</li>
+            <li>编程: R, MATLAB, Java, C++, Python, Rox</li>
+            <li>阿里云认证: 基于列表数据的个人资料分析</li>
+        </ul>
 
-            <h4>基于EfficientNet的图像源识别，学术论文 (2024.3 - 2024.4)</h4>
-            <ul>
-                <li>改进Efficient-B0模型并添加注意力机制，对不同的相机模型进行识别，对结果进行交叉验证</li>
-                <li>实验设计，论文撰写，代码实现</li>
-                <li>实现了算法准确率在97%以上</li>
-            </ul>
+        <h2>研究经历</h2>
+        <ul>
+            <li><strong>数据科学交互系统</strong>: 应用 Q-learning 强化学习优化自适应交通信号控制（ATSC），优化基于模拟数据的实时交通信号灯操作。</li>
+            <li><strong>图像源识别</strong>: 基于 EfficientNetB0 模型改进，集成 CBAM（卷积块注意力模块），通过 Python 实现，图像识别准确率达 95%。</li>
+        </ul>
 
-            <h4>数据科学一体化交互系统，系统编程 (2022.3 - 2022.5)</h4>
-            <ul>
-                <li>使用Golang和Python将静态数据（传统结构化数据）与动态数据（非结构化数据）相结合，设计了一个具有商机识别和实时开发功能的综合互动系统</li>
-                <li>代码编程</li>
-                <li>该系统受国家版权局保护</li>
-            </ul>
-        </div>
+        <h2>实习经历</h2>
+        <ul>
+            <li><strong>北京智能交通发展中心</strong> - 数据部实习生 (2024年5月 – 2024年8月)</li>
+            <li><strong>中国人民银行</strong> - 研究中心实习生 (2023年4月 – 2023年7月)</li>
+        </ul>
 
-        <div class="section skills">
-            <h3>专业技能</h3>
-            <ul>
-                <li>编程语言：Matlab，Python，R，Java，C++</li>
-                <li>工具与技术：Eviews, SPSS, Stata, SAS, Origin, GraphPad</li>
-                <li>算法与模型：卷积神经网络 (CNN)，循环神经网络 (RNN)，主流机器学习算法</li>
-            </ul>
-        </div>
-
+        <!-- 下载简历链接（Word 文件） -->
         <div class="download-link">
-            <a href="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/wangrunlu.pdf" download>下载PDF版简历</a>
+            <a href="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/wangrunlu.docx" download>下载Word版简历</a>
         </div>
     </div>
 
