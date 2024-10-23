@@ -14,7 +14,6 @@
         body, html {
             height: 100%;
             font-family: Arial, sans-serif;
-            overflow: hidden; /* 禁止页面滚动 */
         }
 
         /* 背景图片设置 */
@@ -49,11 +48,15 @@
             line-height: 1.8;
         }
 
-        /* 选项卡部分 */
+        /* 选项卡部分，固定在页面顶部 */
         .tab {
             display: flex;
             justify-content: center;
             background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
             padding: 10px;
         }
 
@@ -84,9 +87,9 @@
             background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
             max-width: 800px;
-            margin: 20px auto;
+            margin: 60px auto; /* 选项卡占据顶部空间，内容下移 */
             color: #333;
-            overflow-y: auto; /* 允许内容内部滚动 */
+            overflow-y: auto;
             max-height: 80vh;
         }
 
