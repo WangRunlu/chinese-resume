@@ -17,14 +17,15 @@
             background-color: #f4f4f4;
         }
 
-        /* 统一导航栏样式 */
+        /* 优化后的导航栏样式 */
         .nav {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px;
+            background-color: #333;
+            padding: 15px;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 100;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .nav a {
@@ -33,91 +34,90 @@
             text-decoration: none;
             font-size: 18px;
             padding: 10px 20px;
-            border-radius: 20px;
+            border-radius: 30px;
             background-color: #77aaff;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .nav a:hover {
             background-color: #5599dd;
-            transform: scale(1.05);
-        }
-
-        /* 返回主页按钮样式 */
-        .back-home {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            background-color: #77aaff;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 16px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .back-home:hover {
-            background-color: #5599dd;
-            transform: scale(1.05);
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .container {
             width: 80%;
             margin: 20px auto;
             background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             font-size: 3em;
             margin-bottom: 20px;
             color: #333;
+            text-align: center;
         }
 
         p {
             font-size: 1.2em;
             color: #666;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 20px;
+            border-bottom: 2px solid #77aaff;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
         }
 
         /* 图片样式 */
         img {
-            display: block;
-            margin: 20px auto;
-            max-width: 300px;
+            max-width: 100%;
             height: auto;
+            margin-bottom: 20px;
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
-        .lab-link {
-            font-size: 1.2em;
-            margin: 20px 0;
-        }
-
-        .lab-link a {
-            color: #77aaff;
+        /* 返回主页按钮 */
+        .back-home {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
             text-decoration: none;
-            transition: color 0.3s ease;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            z-index: 1000; /* 确保始终在最上面 */
         }
 
-        .lab-link a:hover {
-            color: #5599dd;
+        .back-home:hover {
+            background-color: #77aaff;
         }
 
     </style>
 </head>
 <body>
 
-    <!-- 左上角返回主页按钮 -->
-    <a href="index.html" class="back-home">返回主页</a>
-
-    <!-- 统一导航栏 -->
+    <!-- 优化后的导航栏 -->
     <div class="nav">
         <a href="index.html">关于</a>
         <a href="简历.html">简历</a>
@@ -125,21 +125,25 @@
         <a href="其他.html">其他</a>
     </div>
 
-    <!-- 实验部分内容 -->
+    <!-- 返回主页按钮 -->
+    <a href="index.html" class="back-home">返回主页</a>
+
+    <!-- 主要内容部分 -->
     <div class="container">
         <h1>实验</h1>
 
-        <!-- IDS 实验室 -->
-        <div class="lab-link">
-            <p>我参与了 <a href="https://ids-lab.net/" target="_blank">IDS 实验室</a> 的研究工作。</p>
-            <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图4.jpg" alt="IDS 实验室图片">
-        </div>
+        <h2>实验室1：智能驾驶系统实验室</h2>
+        <p>我参与了智能驾驶系统实验室的研究，主要研究方向是基于深度学习的路径规划和车辆检测。该实验室专注于开发和优化自动驾驶技术，利用人工智能算法提高驾驶的安全性和效率。</p>
+        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图4.jpg" alt="智能驾驶系统实验室图片">
 
-        <!-- 能源实验室 -->
-        <div class="lab-link">
-            <p>此外，我还参与了 <a href="https://energy.mae.cornell.edu/" target="_blank">能源实验室</a> 的研究项目。</p>
-            <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图5.jpg" alt="能源实验室图片">
-        </div>
+        <h2>实验室2：能源系统实验室</h2>
+        <p>在能源系统实验室，我参与了能源分配优化的研究，主要针对可再生能源系统的建模与调度。该实验室的研究目标是通过智能系统优化能源使用效率，减少碳排放。</p>
+        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图5.jpg" alt="能源系统实验室图片">
+        
+        <!-- 链接至实验室网页 -->
+        <p>更多信息，请访问实验室网站：<br>
+        <a href="https://ids-lab.net/" target="_blank">智能驾驶系统实验室</a><br>
+        <a href="https://energy.mae.cornell.edu/" target="_blank">能源系统实验室</a></p>
     </div>
 
 </body>
