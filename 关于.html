@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于我 - 王润陆的个人主页</title>
+    <title>关于 - 王润陆的个人主页</title>
     <style>
         * {
             margin: 0;
@@ -17,14 +17,15 @@
             background-color: #f4f4f4;
         }
 
-        /* 统一导航栏样式 */
+        /* 优化后的导航栏样式 */
         .nav {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px;
+            background-color: #333;
+            padding: 15px;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 100;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .nav a {
@@ -33,23 +34,24 @@
             text-decoration: none;
             font-size: 18px;
             padding: 10px 20px;
-            border-radius: 20px;
+            border-radius: 30px;
             background-color: #77aaff;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .nav a:hover {
             background-color: #5599dd;
-            transform: scale(1.05);
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .container {
             width: 80%;
             margin: 20px auto;
             background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
@@ -67,6 +69,25 @@
             margin: 0 auto;
         }
 
+        /* 返回主页按钮 */
+        .back-home {
+            position: fixed;
+            top: 20px;  /* 靠近顶部 */
+            right: 20px; /* 靠右边 */
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            z-index: 1000; /* 确保始终在最上面 */
+        }
+
+        .back-home:hover {
+            background-color: #77aaff;
+        }
+
         /* 图片样式 */
         img {
             display: block;
@@ -76,39 +97,20 @@
             border-radius: 10px;
         }
 
-        /* 左上角返回主页按钮样式 */
-        .back-home {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            background-color: #77aaff;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 16px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .back-home:hover {
-            background-color: #5599dd;
-            transform: scale(1.05);
-        }
-
     </style>
 </head>
 <body>
 
-    <!-- 左上角返回主页按钮 -->
-    <a href="index.html" class="back-home">返回主页</a>
-
-    <!-- 统一导航栏 -->
+    <!-- 优化后的导航栏 -->
     <div class="nav">
         <a href="index.html">关于</a>
         <a href="简历.html">简历</a>
-        <a href="项目.html">项目</a>
+        <a href="项目.html">实验</a>
         <a href="其他.html">其他</a>
     </div>
+
+    <!-- 返回主页按钮 -->
+    <a href="index.html" class="back-home">返回主页</a>
 
     <!-- 主要内容部分 -->
     <div class="container">
