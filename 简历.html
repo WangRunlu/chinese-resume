@@ -5,26 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>王润陆的简历</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+        }
+
+        /* 统一导航栏样式 */
+        .nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: #77aaff;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #5599dd;
+            transform: scale(1.05);
         }
 
         .container {
             width: 80%;
             margin: 20px auto;
+            background: #fff;
             padding: 20px;
-            background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
-            text-align: center;
             font-size: 2.5em;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
         .info {
@@ -70,11 +101,43 @@
         .section {
             margin-bottom: 20px;
         }
+
+        /* 左上角返回主页按钮样式 */
+        .back-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #77aaff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-home:hover {
+            background-color: #5599dd;
+            transform: scale(1.05);
+        }
+
     </style>
 </head>
 <body>
+
+    <!-- 左上角返回主页按钮 -->
+    <a href="index.html" class="back-home">返回主页</a>
+
+    <!-- 统一导航栏 -->
+    <div class="nav">
+        <a href="index.html">关于</a>
+        <a href="简历.html">简历</a>
+        <a href="项目.html">项目</a>
+        <a href="其他.html">其他</a>
+    </div>
+
     <div class="container">
-        <h1>王润陆</h1>
+        <h1>王润陆的简历</h1>
         <div class="info">
             电话: (+1) 607-6975713 | 邮箱: rw746@cornell.edu | 
             <a href="https://www.linkedin.com/in/runlu-wang-7104b3310/" target="_blank" class="linkedin-link">
@@ -99,7 +162,7 @@
         <div class="section">
             <h2>证书与技能</h2>
             <p><strong>统计技能:</strong> Eviews, SPSS, Stata, SAS</p>
-            <p><strong>编程:</strong> R, MATLAB, Java, C++, Python, Rox</p>
+            <p><strong>编程技能:</strong> R, MATLAB, Java, C++, Python, Rox</p>
             <p><strong>阿里云认证:</strong> 基于列表数据的个人资料分析</p>
         </div>
 
@@ -140,5 +203,6 @@
             </ul>
         </div>
     </div>
+
 </body>
 </html>
