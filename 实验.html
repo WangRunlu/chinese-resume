@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实验 - 王润陆的个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 统一导航栏样式 */
+        .nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: #77aaff;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #5599dd;
+            transform: scale(1.05);
+        }
+
+        /* 返回主页按钮样式 */
+        .nav .home-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            padding: 10px;
+            background-color: #77aaff;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        .nav .home-btn:hover {
+            background-color: #5599dd;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* 图片样式 */
+        .lab-img {
+            display: block;
+            margin: 20px auto;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 统一导航栏 -->
+    <div class="nav">
+        <a href="关于.html">关于</a>
+        <a href="简历.html">简历</a>
+        <a href="实验.html">实验</a>
+        <a href="其他.html">其他</a>
+        <!-- 返回主页按钮 -->
+        <a href="index.html" class="home-btn">返回主页</a>
+    </div>
+
+    <!-- 主要内容部分 -->
+    <div class="container">
+        <h1>我参与的实验室</h1>
+        
+        <h2>1. Intelligent Decision Systems Lab (IDS Lab)</h2>
+        <p>在IDS实验室，我参与了多个关于系统优化和决策支持系统的研究项目。实验室主页链接如下：</p>
+        <p><a href="https://ids-lab.net/" target="_blank">https://ids-lab.net/</a></p>
+        <!-- 配图图4 -->
+        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图4.jpg" alt="IDS Lab" class="lab-img">
+
+        <h2>2. Energy Systems Institute</h2>
+        <p>我在能源系统实验室中研究了与能源效率和可再生能源相关的多个课题。实验室主页链接如下：</p>
+        <p><a href="https://energy.mae.cornell.edu/" target="_blank">https://energy.mae.cornell.edu/</a></p>
+        <!-- 配图图5 -->
+        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图5.jpg" alt="Energy Systems Institute" class="lab-img">
+
+    </div>
+
+</body>
+</html>
