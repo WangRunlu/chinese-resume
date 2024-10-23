@@ -16,39 +16,19 @@
             font-family: Arial, sans-serif;
         }
 
-        /* 背景图片设置 */
+        /* 默认无背景图 */
         body {
+            background-color: #f4f4f4;
+            transition: background 0.3s ease;
+        }
+
+        /* 背景图片设置，只在About页面显示 */
+        .about-background {
             background: url('https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图2.jpg') no-repeat center center fixed;
             background-size: cover;
         }
 
-        /* 自我介绍部分 */
-        .intro-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.5); /* 背景半透明 */
-            text-align: center;
-            padding: 20px;
-        }
-
-        .intro-content h1 {
-            font-size: 3em;
-            color: white;
-            margin-bottom: 20px;
-        }
-
-        .intro-content p {
-            font-size: 1.2em;
-            color: #ddd;
-            max-width: 600px;
-            margin-bottom: 40px;
-            line-height: 1.8;
-        }
-
-        /* 选项卡部分，固定在页面顶部 */
+        /* 顶部选项卡部分，固定在页面顶部 */
         .tab {
             display: flex;
             justify-content: center;
@@ -123,19 +103,18 @@
 </head>
 <body>
 
-    <!-- 自我介绍部分 -->
-    <div class="intro-content" id="intro-section">
-        <h1>我是王润陆</h1>
-        <p>
-            我目前是康奈尔大学系统工程专业的硕士生，专注于数据分析、机器学习和系统工程。我的研究兴趣包括智能系统的开发与优化，目标是通过数据科学和机器学习推动医疗保健系统的决策支持。我将在2025年毕业，正在寻找相关领域的工作机会。
-        </p>
-    </div>
-
-    <!-- 选项卡部分 -->
+    <!-- 顶部选项卡 -->
     <div class="tab" id="tabs">
+        <button class="tablinks" onclick="openTab(event, 'About')">About</button>
         <button class="tablinks" onclick="openTab(event, 'Resume')">简历</button>
         <button class="tablinks" onclick="openTab(event, 'Portfolio')">Portfolio</button>
         <button class="tablinks" onclick="openTab(event, 'Testimonials')">Testimonials</button>
+    </div>
+
+    <!-- About 部分（带背景图） -->
+    <div id="About" class="tabcontent">
+        <h2>关于我</h2>
+        <p>我是王润陆，目前是康奈尔大学系统工程专业的硕士生，专注于数据分析、机器学习和系统工程。我的研究兴趣包括智能系统的开发与优化，目标是通过数据科学和机器学习推动医疗保健系统的决策支持。我将在2025年毕业，正在寻找相关领域的工作机会。</p>
     </div>
 
     <!-- 简历部分 -->
@@ -224,7 +203,6 @@
 
     <!-- JavaScript 实现选项卡功能 -->
     <script>
-        // 显示选项卡内容并隐藏自我介绍
         function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
@@ -237,11 +215,19 @@
             }
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
-            // 隐藏自我介绍部分
-            document.getElementById("intro-section").style.display = "none";
-            // 允许页面滚动
-            document.body.style.overflow = "auto";
+
+            // 根据选项卡是否为 About 来切换背景图
+            if (tabName === 'About') {
+                document.body.classList.add('about-background');
+            } else {
+                document.body.classList.remove('about-background');
+            }
         }
+
+        // 默认显示 About 选项卡
+        document.addEventListener("DOMContentLoaded", function() {
+            openTab(event, 'About');
+        });
     </script>
 
 </body>
