@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于 - 王润陆的个人主页</title>
+    <title>简历 - 王润陆的个人主页</title>
     <style>
         * {
             margin: 0;
@@ -52,28 +52,44 @@
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
 
         h1 {
             font-size: 3em;
             margin-bottom: 20px;
             color: #333;
+            text-align: center;
         }
 
         p {
             font-size: 1.2em;
             color: #666;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 20px;
+            border-bottom: 2px solid #77aaff;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
         }
 
         /* 返回主页按钮 */
         .back-home {
             position: fixed;
-            top: 20px;  /* 靠近顶部 */
-            right: 20px; /* 靠右边 */
+            top: 20px;
+            right: 20px;
             background-color: rgba(0, 0, 0, 0.8);
             color: white;
             padding: 10px 20px;
@@ -86,15 +102,6 @@
 
         .back-home:hover {
             background-color: #77aaff;
-        }
-
-        /* 图片样式 */
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
         }
 
     </style>
@@ -114,11 +121,31 @@
 
     <!-- 主要内容部分 -->
     <div class="container">
-        <h1>关于我</h1>
-        <p>我是王润陆，目前是康奈尔大学系统工程专业的硕士生，专注于数据分析、机器学习和系统工程。我的研究兴趣包括智能系统的开发与优化，目标是通过数据科学和机器学习推动医疗保健系统的决策支持。我将在2025年毕业，正在寻找相关领域的工作机会。</p>
-        
-        <!-- 图片显示 -->
-        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图.jpg" alt="个人照片">
+        <h1>王润陆的简历</h1>
+        <h2>教育背景</h2>
+        <ul>
+            <li><strong>康奈尔大学</strong> <br> 系统工程硕士 (2024 年 7 月–2026 年 5 月) <br> 核心课程: 机器人学习, 基于模型的系统工程</li>
+            <li><strong>伦敦布鲁内尔大学</strong> <br> 数学与数据科学学士 (2020 年 9 月–2024 年 6 月) <br> 荣誉: 一等荣誉学位，Brunel+ 铜奖 <br> 核心课程: 数学基础 (A*), 概率与统计 I (A*), 深度学习数学 (A*), 数据分析的统计编程 (A+)</li>
+        </ul>
+
+        <h2>证书与技能</h2>
+        <ul>
+            <li><strong>统计技能</strong>: Eviews, SPSS, Stata, SAS</li>
+            <li><strong>编程技能</strong>: R, MATLAB, Java, C++, Python, Rox</li>
+            <li><strong>阿里云认证</strong>: 基于列表数据的个人资料分析</li>
+        </ul>
+
+        <h2>研究经历</h2>
+        <ul>
+            <li><strong>数据科学一体化交互系统</strong> <br> 应用 Q-learning 强化学习进行自适应交通信号控制(ATSC)，基于模拟数据优化单个交叉路口的实时交通灯操作。利用大型语言模型(LLM)预测人类驾驶车辆的轨迹，提高交通流量预测的准确性。开发了高效的路径规划算法，以优化路由并减少各种交通场景下的旅行时间。</li>
+            <li><strong>移动设备拍摄图片的图像源识别</strong> <br> 通过在每个块中集成 CBAM(卷积块注意力模块)改进 EﬀicientNetB0 模型，并使用 Python 实现该模型。进行了消融研究，评估模型中每个组件对准确性的影响，确定最关键的部分。在移动电话数据集上实现了 95% 的图像识别准确率。</li>
+        </ul>
+
+        <h2>实习经历</h2>
+        <ul>
+            <li><strong>北京市智能交通发展中心</strong> <br> 数据部门实习生 (2024 年 5 月–2024 年 8 月) <br> 应用统计方法分析儿童医院停车情况，进行市场分布分析、仿真建模，并开发停车预约机制。开发了优化的动态停车位分配算法，显著提高了用户满意度并增加了特定停车场的企业盈利能力。审阅了有关自动驾驶技术的文献和白皮书，重点关注自动驾驶巴士和功能评分。</li>
+            <li><strong>中国人民银行</strong> <br> 研究中心实习生 (2023 年 4 月–2023 年 7 月) <br> 协助编写《人工智能在金融业应用白皮书》，撰写草案，组织与中信、华为、百度等银行和 IT 行业领先公司会议，最终确定报告。完成了有关金融标准化(信息创新)的本地化工作，促进了人工智能与金融社区内的协作与知识共享。</li>
+        </ul>
     </div>
 
 </body>
