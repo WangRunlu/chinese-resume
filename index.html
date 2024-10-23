@@ -14,31 +14,34 @@
         body, html {
             height: 100%;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
         }
 
-        /* 顶部导航栏 */
+        /* 统一导航栏样式 */
         .nav {
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.8);
             padding: 10px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            padding: 10px;
-            background-color: #77aaff;
             color: white;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: #77aaff;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .nav a:hover {
             background-color: #5599dd;
+            transform: scale(1.05);
         }
 
-        /* 主页内容样式 */
         .content {
             display: flex;
             flex-direction: column;
@@ -46,9 +49,8 @@
             align-items: center;
             height: 80vh;
             text-align: center;
-            background: url('https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图2.jpg') no-repeat center center fixed;
-            background-size: cover;
             color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
         }
 
         h1 {
@@ -59,13 +61,20 @@
         p {
             font-size: 1.2em;
             max-width: 600px;
+            line-height: 1.6;
+        }
+
+        /* 背景图片样式 */
+        body {
+            background: url('https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图2.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
 
     </style>
 </head>
 <body>
 
-    <!-- 顶部导航 -->
+    <!-- 统一导航栏 -->
     <div class="nav">
         <a href="关于.html">关于</a>
         <a href="简历.html">简历</a>
@@ -73,10 +82,10 @@
         <a href="其他.html">其他</a>
     </div>
 
-    <!-- 主页内容 -->
+    <!-- 首页内容部分 -->
     <div class="content">
-        <h1>欢迎来到王润陆的个人主页</h1>
-        <p>我是康奈尔大学系统工程专业的硕士生，专注于数据分析、机器学习和系统工程。</p>
+        <h1>欢迎来到我的个人主页</h1>
+        <p>我是王润陆，康奈尔大学系统工程专业的硕士生，专注于数据分析、机器学习和系统工程。通过浏览此页面，你将了解我的个人经历、项目及其他信息。</p>
     </div>
 
 </body>
