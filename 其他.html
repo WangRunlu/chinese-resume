@@ -3,115 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>其他 - 王润陆的个人主页</title>
+    <title>INTJ 人格介绍 - 王润陆</title>
     <style>
-        * {
+        body, html {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body, html {
             height: 100%;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background: url('https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        /* 统一导航栏样式 */
-        .nav {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav a {
+        .quote-box {
+            background-color: rgba(0, 0, 0, 0.6);
             color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px 20px;
-            border-radius: 20px;
-            background-color: #77aaff;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .nav a:hover {
-            background-color: #5599dd;
-            transform: scale(1.05);
-        }
-
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
+            padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            font-size: 1.2em;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+            top: -50px; /* 调整整体文本框的位置 */
         }
 
-        h2 {
-            border-bottom: 2px solid #77aaff;
-            padding-bottom: 10px;
+        .quote-box img {
+            width: 60px;
+            border-radius: 50%;
             margin-bottom: 20px;
-            color: #333;
         }
 
-        .testimonial {
-            margin-bottom: 30px;
-        }
-
-        .testimonial h3 {
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .testimonial p {
-            margin-bottom: 10px;
-            color: #666;
-        }
-
-        .testimonial cite {
+        .quote {
             font-style: italic;
-            color: #999;
+            margin-bottom: 20px;
+        }
+
+        .author {
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        /* 返回主页按钮 */
+        .back-home {
+            position: absolute;
+            top: 20px;  /* 靠近顶部 */
+            right: 20px; /* 靠右边 */
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-home:hover {
+            background-color: #77aaff;
         }
 
     </style>
 </head>
 <body>
 
-    <!-- 统一导航栏 -->
-    <div class="nav">
-        <a href="关于.html">关于</a>
-        <a href="简历.html">简历</a>
-        <a href="项目.html">项目</a>
-        <a href="其他.html">其他</a>
-    </div>
+    <!-- 返回主页按钮 -->
+    <a href="index.html" class="back-home">返回主页</a>
 
-    <!-- 推荐或反馈内容 -->
-    <div class="container">
-        <h2>推荐与反馈</h2>
-
-        <div class="testimonial">
-            <h3>推荐人：李教授</h3>
-            <p>“润陆在我们的研究项目中表现出了极强的分析能力和解决问题的能力。他的勤奋和对细节的关注让我对他的未来充满信心。”</p>
-            <cite>— 李教授，康奈尔大学</cite>
+    <!-- 主要内容 -->
+    <div class="quote-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/MyersBriggsTypes.png/220px-MyersBriggsTypes.png" alt="INTJ 头像">
+        <div class="quote">
+            “INTJ 是一种性格类型，拥有内向、直觉、思维和判断的特质。这类人往往性格内敛但意志坚定，且对生活持有理性的看法。他们谨慎地规划自己的行动，并以有条不紊的方式执行。”
         </div>
-
-        <div class="testimonial">
-            <h3>推荐人：张经理</h3>
-            <p>“在实习期间，润陆展现了极高的专业素养和责任感。他不仅有效完成了任务，还主动提出了许多有价值的建议，帮助提升了团队的工作效率。”</p>
-            <cite>— 张经理，江苏塞拉弗电力发展有限公司</cite>
-        </div>
-
-        <div class="testimonial">
-            <h3>推荐人：王博士</h3>
-            <p>“润陆是一位非常出色的团队成员，他不仅能很好地执行个人任务，还能帮助其他团队成员克服技术难题。”</p>
-            <cite>— 王博士，中国人民银行信创实验室</cite>
-        </div>
-
+        <div class="author">—— MBTI 性格类型</div>
     </div>
 
 </body>
