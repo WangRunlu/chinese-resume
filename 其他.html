@@ -3,47 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTJ 人格介绍 - 王润陆</title>
+    <title>其他 - 王润陆的个人主页</title>
     <style>
-        body, html {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
             height: 100%;
             font-family: Arial, sans-serif;
-            background: url('https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图.jpg') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: #f4f4f4;
         }
 
-        .quote-box {
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
-            padding: 40px;
-            border-radius: 10px;
+        /* 统一导航栏样式 */
+        .nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
             text-align: center;
-            max-width: 600px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: #77aaff;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #5599dd;
+            transform: scale(1.05);
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
             font-size: 1.2em;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            position: relative;
-            top: -50px; /* 调整整体文本框的位置 */
-        }
-
-        .quote-box img {
-            width: 60px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        .quote {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-
-        .author {
-            font-weight: bold;
-            font-size: 1em;
+            color: #666;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         /* 返回主页按钮 */
@@ -68,16 +89,21 @@
 </head>
 <body>
 
+    <!-- 统一导航栏 -->
+    <div class="nav">
+        <a href="index.html">关于</a>
+        <a href="简历.html">简历</a>
+        <a href="项目.html">实验</a>
+        <a href="其他.html">其他</a>
+    </div>
+
     <!-- 返回主页按钮 -->
     <a href="index.html" class="back-home">返回主页</a>
 
-    <!-- 主要内容 -->
-    <div class="quote-box">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/MyersBriggsTypes.png/220px-MyersBriggsTypes.png" alt="INTJ 头像">
-        <div class="quote">
-            “INTJ 是一种性格类型，拥有内向、直觉、思维和判断的特质。这类人往往性格内敛但意志坚定，且对生活持有理性的看法。他们谨慎地规划自己的行动，并以有条不紊的方式执行。”
-        </div>
-        <div class="author">—— MBTI 性格类型</div>
+    <!-- 主要内容部分 -->
+    <div class="container">
+        <h1>其他</h1>
+        <p>这里是展示一些关于我的更多信息。</p>
     </div>
 
 </body>
