@@ -1,169 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Runlu Wang - Personal Website</title>
+    <title>Portfolio - 王润陆的个人主页</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            box-sizing: border-box;
         }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* 顶部导航栏样式 */
+        .nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #77aaff;
+            transition: background-color 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #5599dd;
+        }
+
         .container {
             width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            border-bottom: #77aaff 3px solid;
-        }
-        header h1 {
-            text-align: center;
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header nav {
-            text-align: center;
-            margin-top: 10px;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-            margin: 0 15px;
-        }
-        .main-content {
-            padding: 20px;
+            margin: 20px auto;
             background: #fff;
-            margin: 20px 0;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .main-content h2 {
-            color: #333;
+
+        h2 {
             border-bottom: 2px solid #77aaff;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #333;
         }
-        .main-content p {
+
+        .project {
+            margin-bottom: 30px;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project p {
+            margin-bottom: 10px;
             color: #666;
-            line-height: 1.8;
         }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
-            border-top: #77aaff 3px solid;
+
+        .project a {
+            text-decoration: none;
+            color: #77aaff;
+            font-weight: bold;
         }
-        footer p {
-            margin: 0;
+
+        .project a:hover {
+            text-decoration: underline;
         }
-        @media (max-width: 600px) {
-            .container {
-                width: 100%;
-                padding: 0 10px;
-            }
-            header h1 {
-                font-size: 2em;
-            }
-            header a {
-                display: block;
-                margin: 10px 0;
-            }
-        }
+
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Runlu Wang</h1>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#research">Research</a>
-                <a href="#internships">Internships</a>
-                <a href="#skills">Skills</a>
-            </nav>
-        </div>
-    </header>
-    
-    <div class="container">
-        <section id="about" class="main-content">
-            <h2>About</h2>
-            <p>Hello, I'm Runlu Wang, a passionate and dedicated student of Mathematics for Data Science at Brunel University London. My interests lie in data analysis, statistical modeling, and the application of AI in various fields. With a strong academic background and hands-on experience in multiple research projects and internships, I am committed to advancing my career in data science and technology.</p>
-        </section>
-        
-        <section id="education" class="main-content">
-            <h2>Education</h2>
-            <p><strong>Brunel University London</strong> <br>
-            Bachelor of Science in Mathematics for Data Science (09/2020–06/2024) <br>
-            Grade: 81.5 <br>
-            Selected honours: Brunel+ Bronze Award <br>
-            Core modules: <br>
-            - Fundamental of Mathematics (A*) <br>
-            - Probability and Statistics I (A*) <br>
-            - Mathematics of Deep Learning (A*) <br>
-            - Statistical Programming for Data Analytics (A+) <br>
-            - Discrete Mathematics and OR (A+)</p>
-        </section>
-        
-        <section id="research" class="main-content">
-            <h2>Research</h2>
-            <p><strong>Data Analysis: Pressure prediction of Lng container</strong> <br>
-            Investigated two statistical approaches to establish models for Lng container’s pressure prediction; used performance data to demonstrate the application of above statistical models; the prediction errors were less than 1%</p>
-            
-            <p><strong>An Integrated Interactive System for Data Science</strong> <br>
-            Designed an integrated interactive system with the function of business opportunities identification and real-time exploitation by combining static data (traditional structured data) with dynamic data (unstructured data) using Golang and Python (the system is protected by copyright)</p>
-            
-            <p><strong>A Face Recognition System Based on Convolution Neural Network</strong> <br>
-            Designed an efficient face recognition system based on a convolutional neural network. The network architecture includes four convolutional layers, three pooling layers, and a combination of one fully connected layer followed by a developed activation</p>
-        </section>
-        
-        <section id="internships" class="main-content">
-            <h2>Internships</h2>
-            <p><strong>Seraphim Solar System Co., Ltd</strong> <br>
-            Information Department Intern (08/2023-09/2023) <br>
-            - Trained and practiced software tools specific to the company's operations (e.g., project management tools, data analysis platforms), able to complete various tasks effectively <br>
-            - Built data integration, models and visualisation to provide efficient insight into business performance in two separate projects <br>
-            - Identified defects in solar panels with yolo algorithm, successfully developed software increasing efficiency by 5%</p>
-            
-            <p><strong>Beijing Jin’an Information Technology Co., Ltd</strong> <br>
-            Research Centre Intern (04/2023-07/2023) <br>
-            - Assisted with the preparation of the ‘AI and ITS Application White Paper’ by dealing with issues such as writing the draft, organising meetings to invite leading companies in the banking and IT sectors (e.g., CITIC, Huawei, Baidu) to discuss relevant matters, and finalising the paper <br>
-            - Completed localisation work regarding financial standardisation (information innovation) <br>
-            - Produced paper ‘AI OCR Scene Single Card Multi-Mode Solution in the Financial Industry’ to promote collaboration and knowledge-sharing within the AI and finance communities</p>
-            
-            <p><strong>Yunli Zhihui Co, Ltd</strong> <br>
-            Data Analyst Intern (01/2023-02/2023) <br>
-            - Leveraged data preparation tools to clean and transform raw data, improving data quality by 29% <br>
-            - Employed data manipulation techniques to consolidate redundant data, which reduced storage space by 51% and enabled faster retrieval times <br>
-            - Applied data visualisation techniques to clearly present complex insights that resulted in a 57% improvement in stakeholders’ data-driven decision-making</p>
-        </section>
-        
-        <section id="skills" class="main-content">
-            <h2>Skills & Certifications</h2>
-            <p><strong>Certifications</strong> <br>
-            - Alibaba Cloud Certification: Profile Analysis based on Listing Data</p>
-            
-            <p><strong>Statistical skills</strong> <br>
-            - Eviews, SPSS, Stata, SAS, Origin, GraphPad</p>
-            
-            <p><strong>Programming</strong> <br>
-            - R, MATLAB, Java, C++, Python</p>
-        </section>
+
+    <!-- 顶部导航栏 -->
+    <div class="nav">
+        <a href="index.html">主页</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">简历</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="testimonials.html">Testimonials</a>
     </div>
-    
-    <footer>
-        <p>Contact: (+86) 13240901459 | Email: 2053724@brunel.ac.uk</p>
-    </footer>
+
+    <!-- Portfolio 内容 -->
+    <div class="container">
+        <h2>Portfolio</h2>
+
+        <div class="project">
+            <h3>项目1：基于EfficientNet的图像源识别</h3>
+            <p>改进Efficient-B0模型并添加注意力机制，对不同的相机模型进行识别，并对结果进行交叉验证。实现了算法准确率在97%以上。</p>
+            <a href="#">查看项目详情</a>
+        </div>
+
+        <div class="project">
+            <h3>项目2：数据科学一体化交互系统</h3>
+            <p>使用Golang和Python将静态数据（传统结构化数据）与动态数据（非结构化数据）相结合，设计了一个具有商机识别和实时开发功能的综合互动系统。</p>
+            <a href="#">查看项目详情</a>
+        </div>
+
+        <div class="project">
+            <h3>项目3：太阳能板缺陷识别</h3>
+            <p>使用yolo算法进行太阳能板的缺陷识别，并协助开发相关识别软件，成功提高了识别效率和准确率，减少了人工成本。</p>
+            <a href="#">查看项目详情</a>
+        </div>
+
+    </div>
+
 </body>
 </html>
