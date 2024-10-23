@@ -14,66 +14,75 @@
         body, html {
             height: 100%;
             font-family: Arial, sans-serif;
-            background: url('https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图2.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
+            background-color: #f4f4f4;
         }
 
-        /* 顶部导航栏样式 */
+        /* 统一导航栏样式 */
         .nav {
             background-color: rgba(0, 0, 0, 0.8);
             padding: 10px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             font-size: 18px;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 20px;
             background-color: #77aaff;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .nav a:hover {
             background-color: #5599dd;
+            transform: scale(1.05);
         }
 
         .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            height: 80vh;
-            color: white;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
         }
 
         h1 {
             font-size: 3em;
             margin-bottom: 20px;
+            color: #333;
         }
 
         p {
             font-size: 1.2em;
-            max-width: 600px;
+            color: #666;
             line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 背景图片样式 */
+        body {
+            background: url('https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图2.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
 
     </style>
 </head>
 <body>
 
-    <!-- 顶部导航栏 -->
+    <!-- 统一导航栏 -->
     <div class="nav">
-        <a href="index.html">主页</a>
-        <a href="about.html">About</a>
-        <a href="resume.html">简历</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="testimonials.html">Testimonials</a>
+        <a href="index.html">关于</a>
+        <a href="简历.html">简历</a>
+        <a href="项目.html">项目</a>
+        <a href="其他.html">其他</a>
     </div>
 
     <!-- 主要内容部分 -->
