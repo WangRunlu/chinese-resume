@@ -3,180 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简历 - 王润陆的个人主页</title>
+    <title>王润陆的简历</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body, html {
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-
-        /* 统一导航栏样式 */
-        .nav {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px 20px;
-            border-radius: 20px;
-            background-color: #77aaff;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .nav a:hover {
-            background-color: #5599dd;
-            transform: scale(1.05);
-        }
-
-        /* 返回主页按钮样式 */
-        .nav .home-btn {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            padding: 10px;
-            background-color: #77aaff;
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            font-size: 16px;
-        }
-
-        .nav .home-btn:hover {
-            background-color: #5599dd;
+            background-color: #f4f4f4;
         }
 
         .container {
             width: 80%;
             margin: 20px auto;
-            background: #fff;
             padding: 20px;
+            background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
 
         h1 {
+            text-align: center;
             font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
             margin-bottom: 10px;
         }
 
-        /* 下载链接样式 */
-        .download-link {
+        .info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
             margin-top: 20px;
+            border-bottom: 2px solid #77aaff;
+            padding-bottom: 5px;
         }
 
-        .download-link a {
+        p, li {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        /* LinkedIn 图标样式 */
+        .linkedin-icon {
+            width: 20px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        .linkedin-link {
+            color: #0077b5;
             text-decoration: none;
-            background-color: #77aaff;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
         }
 
-        .download-link a:hover {
-            background-color: #5599dd;
+        .linkedin-link:hover {
+            text-decoration: underline;
         }
 
+        .section {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-
-    <!-- 统一导航栏 -->
-    <div class="nav">
-        <a href="关于.html">关于</a>
-        <a href="简历.html">简历</a>
-        <a href="实验.html">实验</a>
-        <a href="其他.html">其他</a>
-        <!-- 返回主页按钮 -->
-        <a href="index.html" class="home-btn">返回主页</a>
-    </div>
-
-    <!-- 主要内容部分 -->
     <div class="container">
-        <h1>王润陆的简历</h1>
+        <h1>王润陆</h1>
+        <div class="info">
+            电话: (+1) 607-6975713 | 邮箱: rw746@cornell.edu | 
+            <a href="https://www.linkedin.com/in/runlu-wang-7104b3310/" target="_blank" class="linkedin-link">
+                LinkedIn 
+                <img src="https://img.icons8.com/ios-filled/50/000000/linkedin-2.png" class="linkedin-icon" alt="LinkedIn Icon" />
+            </a>
+        </div>
 
-        <p><strong>电话:</strong> (+1) 607-6975713</p>
-        <p><strong>Email:</strong> rw746@cornell.edu</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/runlu-wang-7104b3310/" target="_blank">点击查看我的LinkedIn</a></p>
+        <div class="section">
+            <h2>教育背景</h2>
+            <p><strong>康奈尔大学</strong> (2024年7月 – 2026年5月)<br>
+                系统工程硕士<br>
+                核心课程: 机器人学习，基于模型的系统工程
+            </p>
+            <p><strong>伦敦布鲁内尔大学</strong> (2020年9月 – 2024年6月)<br>
+                数学与数据科学学士 - 一等荣誉学位<br>
+                荣誉: Brunel+ 铜奖<br>
+                核心课程: 数学基础 (A*)，概率与统计 I (A*)，深度学习数学 (A*)，数据分析的统计编程 (A+)
+            </p>
+        </div>
 
-        <h2>教育背景</h2>
-        <ul>
-            <li><strong>康奈尔大学</strong> - 系统工程硕士 (2024年9月 – 2025年12月)</li>
-            <li><strong>北方工业大学</strong> - 数据科学与大数据技术学士 (2020年9月 – 2024年6月)</li>
-            <li>雅思成绩：7.0</li>
-            <li>绩点：年级前10%</li>
-            <li>学习课程：机器学习、概率与统计、离散数学与运筹学、风险决策、随机优化</li>
-        </ul>
+        <div class="section">
+            <h2>证书与技能</h2>
+            <p><strong>统计技能:</strong> Eviews, SPSS, Stata, SAS</p>
+            <p><strong>编程:</strong> R, MATLAB, Java, C++, Python, Rox</p>
+            <p><strong>阿里云认证:</strong> 基于列表数据的个人资料分析</p>
+        </div>
 
-        <h2>证书与技能</h2>
-        <ul>
-            <li>统计技能: Eviews, SPSS, Stata, SAS, Origin, GraphPad</li>
-            <li>编程: R, MATLAB, Java, C++, Python</li>
-            <li>阿里云认证: 基于列表数据的个人资料分析</li>
-        </ul>
-
-        <h2>研究经历</h2>
-        <ul>
-            <li><strong>基于 EfficientNet 的图像源识别</strong> - 学术论文 (2024年3月 – 2024年4月)</li>
-            <li>改进 EfficientNet-B0 模型并添加注意力机制，对不同的相机模型进行识别，交叉验证结果准确率 97%以上。</li>
-
-            <li><strong>数据科学一体化交互系统</strong> - (2022年3月 – 2022年5月)</li>
-            <li>使用 Golang 和 Python 将静态数据（结构化数据）与动态数据（非结构化数据）相结合，设计了具有商机识别和实时开发功能的系统。</li>
-        </ul>
-
-        <h2>实习经历</h2>
-        <ul>
-            <li><strong>江苏塞拉弗电力发展有限公司</strong> - 信息岗实习 (2023年7月 – 2023年8月)</li>
+        <div class="section">
+            <h2>研究经历</h2>
+            <p><strong>数据科学一体化交互系统</strong></p>
             <ul>
-                <li>负责太阳能板缺陷识别项目</li>
-                <li>学习 YOLO 算法与使用经验，参与算法优化</li>
-                <li>参观自动化工厂，了解工业 4.0 概念</li>
-                <li>协助开发缺陷识别软件，提高效率和准确率，减少人工成本</li>
+                <li>应用 Q-learning 强化学习进行自适应交通信号控制(ATSC)，基于模拟数据优化单个交叉路口的实时交通灯操作。</li>
+                <li>利用大型语言模型(LLM)预测人类驾驶车辆的轨迹，提高交通流量预测的准确性。</li>
+                <li>开发了高效的路径规划算法，以优化路由并减少各种交通场景下的旅行时间。</li>
+            </ul>
+            <p><strong>移动设备拍摄图片的图像源识别</strong></p>
+            <ul>
+                <li>通过在每个块中集成 CBAM(卷积块注意力模块)改进 EfficientNetB0 模型，并使用 Python 实现该模型。</li>
+                <li>进行了消融研究，评估模型中每个组件对准确性的影响，确定最关键的部分。</li>
+                <li>在移动电话数据集上实现了 95% 的图像识别准确率。</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>实习经历</h2>
+            <p><strong>北京市智能交通发展中心</strong> (2024年5月 – 2024年8月)<br>
+                数据部门实习生
+            </p>
+            <ul>
+                <li>应用统计方法分析儿童医院停车情况，进行市场分布分析、仿真建模，并开发停车预约机制。</li>
+                <li>开发了优化的动态停车位分配算法，显著提高了用户满意度并增加了特定停车场的企业盈利能力。</li>
+                <li>审阅了有关自动驾驶技术的文献和白皮书，重点关注自动驾驶巴士和功能评分。</li>
             </ul>
 
-            <li><strong>中国人民银行 (信创实验室)</strong> - 研究岗实习 (2023年4月 – 2023年7月)</li>
+            <p><strong>中国人民银行</strong> (2023年4月 – 2023年7月)<br>
+                研究中心实习生
+            </p>
             <ul>
-                <li>协助编写《人工智能在金融业应用白皮书》</li>
-                <li>撰写草案、组织会议，邀请中信、华为、百度等行业领先公司讨论相关事宜</li>
-                <li>完成有关金融标准化（信息创新）的本地化工作</li>
-                <li>白皮书于 2023年 7月发布</li>
+                <li>协助编写《人工智能在金融业应用白皮书》，撰写草案，组织与中信、华为、百度等银行和IT行业领先公司会议，最终确定报告。</li>
+                <li>完成了有关金融标准化(信息创新)的本地化工作。</li>
+                <li>制作了期刊，促进了人工智能与金融社区内的协作与知识共享。</li>
             </ul>
-        </ul>
-
-        <!-- 下载简历链接（PDF 文件） -->
-        <div class="download-link">
-            <a href="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/wangrunlu.pdf" download>下载PDF版简历</a>
         </div>
     </div>
-
 </body>
 </html>
