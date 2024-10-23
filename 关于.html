@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于 - 王润陆的个人主页</title>
+    <title>关于我 - 王润陆的个人主页</title>
     <style>
         * {
             margin: 0;
@@ -14,6 +14,7 @@
         body, html {
             height: 100%;
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
         }
 
         /* 统一导航栏样式 */
@@ -42,42 +43,37 @@
             transform: scale(1.05);
         }
 
-        /* 返回主页按钮样式 */
-        .nav .home-btn {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            padding: 10px;
-            background-color: #77aaff;
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            font-size: 16px;
-        }
-
-        .nav .home-btn:hover {
-            background-color: #5599dd;
-        }
-
-        .content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 80vh;
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            color: black;
         }
 
         h1 {
             font-size: 3em;
             margin-bottom: 20px;
+            color: #333;
         }
 
         p {
             font-size: 1.2em;
-            max-width: 600px;
+            color: #666;
             line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 图片样式 */
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
         }
 
     </style>
@@ -86,20 +82,19 @@
 
     <!-- 统一导航栏 -->
     <div class="nav">
-        <a href="关于.html">关于</a>
+        <a href="index.html">关于</a>
         <a href="简历.html">简历</a>
-        <a href="实验.html">实验</a>
+        <a href="项目.html">项目</a>
         <a href="其他.html">其他</a>
-        <!-- 返回主页按钮 -->
-        <a href="index.html" class="home-btn">返回主页</a>
     </div>
 
-    <!-- 首页内容部分 -->
-    <div class="content">
+    <!-- 主要内容部分 -->
+    <div class="container">
         <h1>关于我</h1>
-        <p>您好，我是王润陆，来自中国。现在在康奈尔大学攻读系统工程硕士学位，专注于数据科学和智能系统的研究与应用。</p>
-        <p>在我的本科阶段，我在伦敦布鲁内尔大学获得了数学与数据科学的学士学位。在此期间，我参与了多个与机器学习和数据分析相关的项目，积累了丰富的实践经验。</p>
-        <p>我对解决实际问题充满热情，尤其是在交通管理和自动驾驶领域。我希望能通过我的研究和项目，推动智能交通系统的发展。</p>
+        <p>我是王润陆，目前是康奈尔大学系统工程专业的硕士生，专注于数据分析、机器学习和系统工程。我的研究兴趣包括智能系统的开发与优化，目标是通过数据科学和机器学习推动医疗保健系统的决策支持。我将在2025年毕业，正在寻找相关领域的工作机会。</p>
+        
+        <!-- 图片显示 -->
+        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图.jpg" alt="个人照片">
     </div>
 
 </body>
