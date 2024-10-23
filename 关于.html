@@ -76,9 +76,31 @@
             border-radius: 10px;
         }
 
+        /* 左上角返回主页按钮样式 */
+        .back-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #77aaff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-home:hover {
+            background-color: #5599dd;
+            transform: scale(1.05);
+        }
+
     </style>
 </head>
 <body>
+
+    <!-- 左上角返回主页按钮 -->
+    <a href="index.html" class="back-home">返回主页</a>
 
     <!-- 统一导航栏 -->
     <div class="nav">
