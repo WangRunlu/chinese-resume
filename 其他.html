@@ -17,14 +17,15 @@
             background-color: #f4f4f4;
         }
 
-        /* 统一导航栏样式 */
+        /* 优化后的导航栏样式 */
         .nav {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px;
+            background-color: #333;
+            padding: 15px;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 100;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .nav a {
@@ -33,23 +34,24 @@
             text-decoration: none;
             font-size: 18px;
             padding: 10px 20px;
-            border-radius: 20px;
+            border-radius: 30px;
             background-color: #77aaff;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .nav a:hover {
             background-color: #5599dd;
-            transform: scale(1.05);
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .container {
             width: 80%;
             margin: 20px auto;
             background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
@@ -69,16 +71,17 @@
 
         /* 返回主页按钮 */
         .back-home {
-            position: absolute;
+            position: fixed;
             top: 20px;  /* 靠近顶部 */
             right: 20px; /* 靠右边 */
             background-color: rgba(0, 0, 0, 0.8);
             color: white;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 10px;
             text-decoration: none;
             font-size: 16px;
             transition: background-color 0.3s ease;
+            z-index: 1000; /* 确保始终在最上面 */
         }
 
         .back-home:hover {
@@ -89,7 +92,7 @@
 </head>
 <body>
 
-    <!-- 统一导航栏 -->
+    <!-- 优化后的导航栏 -->
     <div class="nav">
         <a href="index.html">关于</a>
         <a href="简历.html">简历</a>
