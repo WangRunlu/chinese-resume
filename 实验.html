@@ -14,6 +14,7 @@
         body, html {
             height: 100%;
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
         }
 
         /* 统一导航栏样式 */
@@ -43,20 +44,22 @@
         }
 
         /* 返回主页按钮样式 */
-        .nav .home-btn {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            padding: 10px;
+        .back-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
             background-color: #77aaff;
             color: white;
-            text-decoration: none;
+            padding: 10px 20px;
             border-radius: 20px;
+            text-decoration: none;
             font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
-        .nav .home-btn:hover {
+        .back-home:hover {
             background-color: #5599dd;
+            transform: scale(1.05);
         }
 
         .container {
@@ -70,64 +73,73 @@
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 20px;
+            color: #333;
         }
 
         p {
             font-size: 1.2em;
+            color: #666;
             line-height: 1.6;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         /* 图片样式 */
-        .lab-img {
+        img {
             display: block;
             margin: 20px auto;
-            max-width: 400px;
+            max-width: 300px;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .lab-link {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .lab-link a {
+            color: #77aaff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .lab-link a:hover {
+            color: #5599dd;
         }
 
     </style>
 </head>
 <body>
 
+    <!-- 左上角返回主页按钮 -->
+    <a href="index.html" class="back-home">返回主页</a>
+
     <!-- 统一导航栏 -->
     <div class="nav">
-        <a href="关于.html">关于</a>
+        <a href="index.html">关于</a>
         <a href="简历.html">简历</a>
         <a href="实验.html">实验</a>
         <a href="其他.html">其他</a>
-        <!-- 返回主页按钮 -->
-        <a href="index.html" class="home-btn">返回主页</a>
     </div>
 
-    <!-- 主要内容部分 -->
+    <!-- 实验部分内容 -->
     <div class="container">
-        <h1>我参与的实验室</h1>
-        
-        <h2>1. Intelligent Decision Systems Lab (IDS Lab)</h2>
-        <p>在IDS实验室，我参与了多个关于系统优化和决策支持系统的研究项目。实验室主页链接如下：</p>
-        <p><a href="https://ids-lab.net/" target="_blank">https://ids-lab.net/</a></p>
-        <!-- 配图图4 -->
-        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图4.jpg" alt="IDS Lab" class="lab-img">
+        <h1>实验</h1>
 
-        <h2>2. Energy Systems Institute</h2>
-        <p>我在能源系统实验室中研究了与能源效率和可再生能源相关的多个课题。实验室主页链接如下：</p>
-        <p><a href="https://energy.mae.cornell.edu/" target="_blank">https://energy.mae.cornell.edu/</a></p>
-        <!-- 配图图5 -->
-        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图5.jpg" alt="Energy Systems Institute" class="lab-img">
+        <!-- IDS 实验室 -->
+        <div class="lab-link">
+            <p>我参与了 <a href="https://ids-lab.net/" target="_blank">IDS 实验室</a> 的研究工作。</p>
+            <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图4.jpg" alt="IDS 实验室图片">
+        </div>
 
+        <!-- 能源实验室 -->
+        <div class="lab-link">
+            <p>此外，我还参与了 <a href="https://energy.mae.cornell.edu/" target="_blank">能源实验室</a> 的研究项目。</p>
+            <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图5.jpg" alt="能源实验室图片">
+        </div>
     </div>
 
 </body>
