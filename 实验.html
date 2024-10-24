@@ -90,9 +90,23 @@
         img {
             max-width: 100%;
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 链接样式 */
+        .lab-link {
+            display: block;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            color: #77aaff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .lab-link:hover {
+            color: #5599dd;
         }
 
         /* 返回主页按钮 */
@@ -122,7 +136,7 @@
     <div class="nav">
         <a href="index.html">关于</a>
         <a href="简历.html">简历</a>
-        <a href="实验.html">实验</a>
+        <a href="实验.html" class="active">实验</a>
         <a href="其他.html">其他</a>
     </div>
 
@@ -135,16 +149,15 @@
 
         <h2>实验室1：智能驾驶系统实验室</h2>
         <p>我参与了智能驾驶系统实验室的研究，主要研究方向是基于深度学习的路径规划和车辆检测。该实验室专注于开发和优化自动驾驶技术，利用人工智能算法提高驾驶的安全性和效率。</p>
-        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图4.jpg" alt="智能驾驶系统实验室图片">
+        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图4.png" alt="智能驾驶系统实验室图片">
+        <!-- 链接至实验室网页 -->
+        <a href="https://ids-lab.net/" target="_blank" class="lab-link">访问智能驾驶系统实验室</a>
 
         <h2>实验室2：能源系统实验室</h2>
         <p>在能源系统实验室，我参与了能源分配优化的研究，主要针对可再生能源系统的建模与调度。该实验室的研究目标是通过智能系统优化能源使用效率，减少碳排放。</p>
-        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图5.jpg" alt="能源系统实验室图片">
-        
+        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图5.png" alt="能源系统实验室图片">
         <!-- 链接至实验室网页 -->
-        <p>更多信息，请访问实验室网站：<br>
-        <a href="https://ids-lab.net/" target="_blank">智能驾驶系统实验室</a><br>
-        <a href="https://energy.mae.cornell.edu/" target="_blank">能源系统实验室</a></p>
+        <a href="https://energy.mae.cornell.edu/" target="_blank" class="lab-link">访问能源系统实验室</a>
     </div>
 
 </body>
