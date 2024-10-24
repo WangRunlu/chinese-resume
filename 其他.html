@@ -72,8 +72,8 @@
         /* 返回主页按钮 */
         .back-home {
             position: fixed;
-            top: 20px;  /* 靠近顶部 */
-            right: 20px; /* 靠右边 */
+            top: 20px;
+            right: 20px;
             background-color: rgba(0, 0, 0, 0.8);
             color: white;
             padding: 10px 20px;
@@ -88,6 +88,41 @@
             background-color: #77aaff;
         }
 
+        /* 图片样式 */
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* 动态效果 */
+        .intj-info {
+            background-color: #77aaff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .intj-info:hover {
+            transform: scale(1.05);
+            background-color: #5599dd;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .intj-info h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .intj-info p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
     </style>
 </head>
 <body>
@@ -96,7 +131,7 @@
     <div class="nav">
         <a href="index.html">关于</a>
         <a href="简历.html">简历</a>
-        <a href="项目.html">实验</a>
+        <a href="实验.html">实验</a>
         <a href="其他.html">其他</a>
     </div>
 
@@ -105,8 +140,17 @@
 
     <!-- 主要内容部分 -->
     <div class="container">
-        <h1>其他</h1>
-        <p>这里是展示一些关于我的更多信息。</p>
+        <h1>INTJ性格介绍</h1>
+
+        <!-- INTJ 动态介绍部分 -->
+        <div class="intj-info">
+            <h2>INTJ - "建筑师"</h2>
+            <p>INTJ (内向，直觉，思维，判断) 是一种充满战略思维的性格类型，被称为"建筑师"。INTJ 以其严谨的逻辑和远见著称，喜欢制定长期计划，并在追求目标时保持专注和毅力。</p>
+            <p>这种性格类型的人通常具有强大的分析能力，善于从复杂的信息中找出核心问题。INTJ 不喜欢随波逐流，更愿意独立思考并提出创新的解决方案。</p>
+        </div>
+
+        <!-- 图片展示 -->
+        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图3.jpg" alt="INTJ 性格图片">
     </div>
 
 </body>
