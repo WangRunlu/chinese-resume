@@ -13,7 +13,7 @@
 
         body, html {
             height: 100%;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
         }
 
@@ -52,13 +52,13 @@
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
 
         h1 {
             font-size: 3em;
             margin-bottom: 20px;
             color: #333;
+            text-align: center;
         }
 
         h2 {
@@ -116,6 +116,24 @@
             background-color: #77aaff;
         }
 
+        /* 表格排版优化 */
+        .resume-table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+
+        .resume-table th, .resume-table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .resume-table th {
+            background-color: #77aaff;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
@@ -136,10 +154,23 @@
         <h1>王润陆的简历</h1>
 
         <h2>教育背景</h2>
-        <ul>
-            <li><strong>康奈尔大学</strong> - 系统工程硕士 (2024.9 - 2026.5)</li>
-            <li><strong>伦敦布鲁内尔大学</strong> - 数学与数据科学学士 (2020.9 - 2024.6)</li>
-        </ul>
+        <table class="resume-table">
+            <tr>
+                <th>学校</th>
+                <th>学位</th>
+                <th>时间</th>
+            </tr>
+            <tr>
+                <td>康奈尔大学</td>
+                <td>系统工程硕士</td>
+                <td>2024.9 - 2026.5</td>
+            </tr>
+            <tr>
+                <td>伦敦布鲁内尔大学</td>
+                <td>数学与数据科学学士</td>
+                <td>2020.9 - 2024.6</td>
+            </tr>
+        </table>
 
         <h2>证书与技能</h2>
         <ul>
@@ -185,7 +216,7 @@
         </ul>
 
         <!-- 下载简历的链接 -->
-        <a href="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/wangrunlu.pdf" download class="download-link">下载Word版简历</a>
+        <a href="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/wangrunlu.pdf" download class="download-link">下载PDF版简历</a>
     </div>
 
 </body>
