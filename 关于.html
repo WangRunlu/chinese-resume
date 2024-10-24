@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简历 - 王润陆的个人主页</title>
+    <title>关于我 - 王润陆的个人主页</title>
     <style>
         * {
             margin: 0;
@@ -45,6 +45,11 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
+        .nav a.active {
+            background-color: #5599dd;
+            pointer-events: none;
+        }
+
         .container {
             width: 80%;
             margin: 20px auto;
@@ -61,40 +66,21 @@
             color: #333;
         }
 
-        h2 {
-            font-size: 1.5em;
-            color: #333;
-            margin-top: 20px;
-            border-bottom: 2px solid #77aaff;
-            padding-bottom: 10px;
-        }
-
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
+        p {
             font-size: 1.2em;
             color: #666;
             line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        /* 链接样式 */
-        a.download-link {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #77aaff;
-            color: white;
-            text-decoration: none;
+        /* 图片样式 */
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 300px;
+            height: auto;
             border-radius: 10px;
-            transition: background-color 0.3s ease;
-        }
-
-        a.download-link:hover {
-            background-color: #5599dd;
         }
 
         /* 返回主页按钮 */
@@ -123,7 +109,7 @@
     <!-- 统一导航栏 -->
     <div class="nav">
         <a href="index.html">关于</a>
-        <a href="简历.html" class="active">简历</a>
+        <a href="简历.html">简历</a>
         <a href="实验.html">实验</a>
         <a href="其他.html">其他</a>
     </div>
@@ -133,59 +119,11 @@
 
     <!-- 主要内容部分 -->
     <div class="container">
-        <h1>王润陆的简历</h1>
-
-        <h2>教育背景</h2>
-        <ul>
-            <li><strong>康奈尔大学</strong> - 系统工程硕士 (2024.9 - 2026.5)</li>
-            <li><strong>伦敦布鲁内尔大学</strong> - 数学与数据科学学士 (2020.9 - 2024.6)</li>
-        </ul>
-
-        <h2>证书与技能</h2>
-        <ul>
-            <li>统计技能: Eviews, SPSS, Stata, SAS</li>
-            <li>编程: R, MATLAB, Java, C++, Python</li>
-            <li>阿里云认证: 基于列表数据的个人资料分析</li>
-        </ul>
-
-        <h2>研究经历</h2>
-        <ul>
-            <li><strong>数据科学一体化交互系统</strong> (2024.7 - 2026.5)
-                <ul>
-                    <li>应用 Q-learning 强化学习进行自适应交通信号控制(ATSC)，基于模拟数据优化单个交叉路口的实时交通灯操作。</li>
-                    <li>利用大型语言模型(LLM)预测人类驾驶车辆的轨迹，提高交通流量预测的准确性。</li>
-                    <li>开发了高效的路径规划算法，以优化路由并减少各种交通场景下的旅行时间。</li>
-                </ul>
-            </li>
-            <li><strong>移动设备拍摄图片的图像源识别</strong> (2024.3 - 2024.4)
-                <ul>
-                    <li>通过在每个块中集成 CBAM(卷积块注意力模块)改进 EﬀicientNetB0 模型，并使用 Python 实现该模型。</li>
-                    <li>进行了消融研究，评估模型中每个组件对准确性的影响，确定最关键的部分。</li>
-                    <li>在移动电话数据集上实现了 95% 的图像识别准确率。</li>
-                </ul>
-            </li>
-        </ul>
-
-        <h2>实习经历</h2>
-        <ul>
-            <li><strong>北京市智能交通发展中心</strong> - 数据部门实习生 (2024.5 - 2024.8)
-                <ul>
-                    <li>应用统计方法分析儿童医院停车情况，进行市场分布分析、仿真建模，并开发停车预约机制。</li>
-                    <li>开发了优化的动态停车位分配算法，显著提高了用户满意度并增加了特定停车场的企业盈利能力。</li>
-                    <li>审阅了有关自动驾驶技术的文献和白皮书，重点关注自动驾驶巴士和功能评分。</li>
-                </ul>
-            </li>
-            <li><strong>中国人民银行</strong> - 研究中心实习生 (2023.4 - 2023.7)
-                <ul>
-                    <li>协助编写《人工智能在金融业应用白皮书》，撰写草案，组织与中信、华为、百度等银行和 IT 行业领先公司会议，最终确定报告。</li>
-                    <li>完成了有关金融标准化(信息创新)的本地化工作。</li>
-                    <li>制作了期刊，促进了人工智能与金融社区内的协作与知识共享。</li>
-                </ul>
-            </li>
-        </ul>
-
-        <!-- 下载简历的链接 -->
-        <a href="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/wangrunlu.docx" download class="download-link">下载Word版简历</a>
+        <h1>关于我</h1>
+        <p>我是王润陆，目前就读于康奈尔大学系统工程专业硕士，专注于数据分析、机器学习和系统工程。我热爱户外徒步（hiking），并从事强化学习的预测研究，涵盖多种应用场景。我尤其关注如何通过智能算法提升系统效率，如在交通信号优化和复杂系统设计中的应用。我的研究旨在推动智能系统的创新，结合数据分析为实际问题提供解决方案，助力科技进步。</p>
+        
+        <!-- 图片显示 -->
+        <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图.jpg" alt="个人照片">
     </div>
 
 </body>
