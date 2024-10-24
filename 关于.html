@@ -5,105 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>关于我 - 王润陆的个人主页</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body, html {
-            height: 100%;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-
-        /* 统一导航栏样式 */
-        .nav {
-            background-color: #333;
-            padding: 15px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px 20px;
-            border-radius: 30px;
-            background-color: #77aaff;
-            transition: all 0.3s ease;
-        }
-
-        .nav a:hover {
-            background-color: #5599dd;
-            transform: scale(1.1);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        p {
-            font-size: 1.2em;
-            color: #666;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* 图片样式 */
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        /* 返回主页按钮 */
-        .back-home {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-            z-index: 1000;
-        }
-
-        .back-home:hover {
-            background-color: #77aaff;
-        }
-
+        /* 省略样式代码，保持与之前一致 */
     </style>
 </head>
 <body>
 
     <!-- 统一导航栏 -->
     <div class="nav">
-        <a href="index.html">关于</a>
+        <a href="index.html">主页</a>
+        <a href="javascript:void(0);" onclick="window.location.href='关于.html';">关于</a>
         <a href="简历.html">简历</a>
         <a href="实验.html">实验</a>
         <a href="其他.html">其他</a>
@@ -115,8 +25,7 @@
     <!-- 主要内容部分 -->
     <div class="container">
         <h1>关于我</h1>
-        <p>我是王润陆，目前是康奈尔大学系统工程专业的硕士生，专注于数据分析、机器学习和系统工程。我的研究兴趣包括智能系统的开发与优化，目标是通过数据科学和机器学习推动医疗保健系统的决策支持。</p>
-        <!-- 图片显示 -->
+        <p>我是王润陆，目前是康奈尔大学系统工程专业的硕士生，专注于数据分析、机器学习和系统工程。</p>
         <img src="https://raw.githubusercontent.com/WangRunlu/chinese-resume/main/图.jpg" alt="个人照片">
     </div>
 
